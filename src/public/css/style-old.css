@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color:#484747;
+}
+.cf:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+main {
+    padding:50px 0;
+    max-width:1200px;
+    margin:0 auto;
+}
+div.game-holder {
+    float:left;
+    width:60%;
+    padding-right:20px;
+    box-sizing:border-box;
+}
+div.game {
+    float:left;
+    width:60%;
+}
+div.controls-holder {
+    float:left;
+    width:40%;
+    box-sizing:border-box;
+}
+div.controls-holder div.logs {
+    padding:5px 15px;
+    max-height:700px;
+    overflow-y:scroll;
+    background:#f9f9f9;
+}
+div.controls-holder div.logs ul {
+    margin:0;
+    padding:0;
+}
+div.controls-holder div.logs ul li {
+    padding:0 0 15px 0;
+    margin:0 0 15px 0;
+    font-size:12px;
+    list-style:none;
+    border-bottom:1px solid #CCC;
+}
+div.controls-holder div.logs ul li span {
+    display:block;
+}
+div.controls-holder div.logs ul li span.error {
+    display:inline-block;
+    padding:3px 7px;
+    margin:0 0 10px 0;
+    color: #721c24;
+    background-color: #f8d7da;
+}
+div.controls-holder div.logs ul li span.success {
+    display:inline-block;
+    padding:3px 7px;
+    margin:0 0 10px 0;
+    color: #155724;
+    background-color: #d4edda;
+}
+div.board {
+    max-width:800px;
+    margin:0 auto;
+    background:#f9f9f9;
+}
+div.board div.file {
+    float:left;
+    width:12.5%;
+}
+div.board div.file div.rank {
+    position:relative;
+    width:100%;
+    padding:30px 0;
+    text-align:center;
+    min-height:30px;
+    background:#f1f1f1;
+}
+div.board div.file div.rank span {
+    display:block;
+    font-size:12px;
+}
+div.board div.file div.rank span.color {
+    font-size:10px;
+}
+span.coordinate {
+    position:absolute;
+    left:10px;
+    top:10px;
+    font-size:8px;
+}
+div.board div.file div.rank.black {
+    background:#CCC;
+}

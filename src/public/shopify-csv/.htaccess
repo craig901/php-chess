@@ -1,0 +1,17 @@
+RewriteEngine On
+#RewriteRule ^article/([^/]*)$ /article.php?slug=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !=/assets/css/style.css
+#RewriteRule !(.*?)\.(js|ico|gif|jpg|png|css)$ /index.php [L]
+RewriteRule ^/assets/css/style\.css$ - [L]
+RewriteRule ^(assets) - [L]
+RewriteRule ^(phpMyAdmin) - [L]
+RewriteRule ^(shopify-csv) - [L]
+
+#RewriteRule ^([a-zA-Z0-9\/\-_]+)\.?([a-zA-Z]+)?$ index.php?url=$1&slug=$2 [QSA,L]
+#RewriteRule ^/?([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)?$ index.php?url=$1&slug=$2 [QSA,L]
+#RewriteRule ^([^/]*)/([^/]*)$ /index.php?url=$1&slug=$2 [L]
+
+RewriteRule ^(.*?)/(.*?)/(.*?)$ /index.php?page=$1&action=$2&id=$3 [L]
+RewriteRule ^(.*?)/(.*?)$ /index.php?page=$1&action=$2 [L]

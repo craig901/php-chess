@@ -1,0 +1,109 @@
+div.winner {
+    padding:20px;
+    margin:0 0 20px 0;
+    color: #155724;
+    background-color: #d4edda;
+    border:1px solid #a6ceaf;
+}
+div.game-holder {
+    float:left;
+    width:60%;
+    padding-right:20px;
+    box-sizing:border-box;
+}
+div.game {
+    float:left;
+    width:60%;
+}
+div.controls-holder {
+    float:left;
+    width:40%;
+    box-sizing:border-box;
+    div.logs {
+        padding:10px 15px;
+        max-height:700px;
+        overflow-y:scroll;
+        background:#f9f9f9;
+        p {
+            padding:0 0 20px 0;
+        }
+        ul {
+            margin:0;
+            padding:0;
+            li {
+                padding:0 0 15px 0;
+                margin:0 0 15px 0;
+                font-size:12px;
+                list-style:none;
+                border-bottom:1px solid #CCC;
+                span {
+                    display:block;
+                }
+                span.player {
+                    color:#ff6600;
+                    text-decoration:underline;
+                }
+                span.error {
+                    display:inline-block;
+                    padding:3px 7px;
+                    margin:0 0 10px 0;
+                    color: #721c24;
+                    background-color: #f8d7da;
+                }
+                span.success {
+                    display:inline-block;
+                    padding:3px 7px;
+                    margin:0 0 10px 0;
+                    color: #155724;
+                    background-color: #d4edda;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+div.board {
+    max-width:800px;
+    margin:0 auto;
+    background:#f9f9f9;
+    div.file {
+        float:left;
+        width:12.5%;
+        div.rank {
+            position:relative;
+            width:100%;
+            padding:20px 0 10px;
+            text-align:center;
+            min-height:70px;
+            background:#f1f1f1;
+            span {
+                display:block;
+                font-size:12px;
+            }
+            span.color {
+                font-size:10px;
+            }
+            span.symbol {
+                font-size:40px;
+            }
+        }
+    }
+}
+
+
+
+
+span.coordinate {
+    position:absolute;
+    left:10px;
+    top:10px;
+    font-size:8px;
+}
+div.board div.file div.rank.black {
+    background:#CCC;
+}
